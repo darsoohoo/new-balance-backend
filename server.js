@@ -27,7 +27,7 @@ app.use(cookieParser());
 // allow access to React app domain
 app.use(
     cors({
-        origin: 'http://localhost:5173',
+        origin: ['http://localhost:5173', "https://newbalancefi.up.railway.app"],
         credentials: true,
     })
 );
